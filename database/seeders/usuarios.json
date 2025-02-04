@@ -1,0 +1,38 @@
+[
+    {
+      "tipo": "Veterinario",
+      "nombre": "Pedro",
+      "apellidos": "González",
+      "direccion": "Calle San Vicente 12, Madrid",
+      "telefono": "912345678",
+      "correo": "pg@veterinaria.com",
+      "password": "veterinario123"
+    },
+    {
+      "tipo": "Veterinario",
+      "nombre": "Laura",
+      "apellidos": "Martínez",
+      "direccion": "Calle La Paz 45, Barcelona",
+      "telefono": "938765432",
+      "correo": "lm@veterinaria.com",
+      "password": "veterinaria456"
+    },
+    {
+      "tipo": "Auxiliar",
+      "nombre": "Ana",
+      "apellidos": "Ramírez",
+      "direccion": "Avenida de la Libertad 7, Valencia",
+      "telefono": "962345678",
+      "correo": "ar@veterinaria.com",
+      "password": "auxiliar123"
+    },
+    {
+      "tipo": "Auxiliar",
+      "nombre": "Carlos",
+      "apellidos": "Hernández",
+      "direccion": "Calle Mayor 23, Sevilla",
+      "telefono": "954321987",
+      "correo": "ch@veterinaria.com",
+      "password": "auxiliar456"
+    }
+  ]

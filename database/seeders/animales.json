@@ -1,0 +1,137 @@
+[
+    {
+      "nombre": "Rex",
+      "tipo": "Perro",
+      "raza": "Pastor Alemán",
+      "imagen": "/images/1.webp",
+      "fechaNacimiento": "2018-05-12",
+      "cliente_id": 1,
+      "usuario_id": 1
+    },
+    {
+      "nombre": "Luna",
+      "tipo": "Perro",
+      "raza": "Labrador",
+      "imagen": "/images/2.jpg",
+      "fechaNacimiento": "2020-08-25",
+      "cliente_id": 2,
+      "usuario_id": 2
+    },
+    {
+      "nombre": "Max",
+      "tipo": "Perro",
+      "raza": "Bulldog Francés",
+      "imagen": "/images/3.jpg",
+      "fechaNacimiento": "2019-11-07",
+      "cliente_id": 3,
+      "usuario_id": 3
+    },
+    {
+      "nombre": "Bella",
+      "tipo": "Perro",
+      "raza": "Golden Retriever",
+      "imagen": "/images/4.jpg",
+      "fechaNacimiento": "2021-02-18",
+      "cliente_id": 4,
+      "usuario_id": 4
+    },
+    {
+      "nombre": "Mittens",
+      "tipo": "Gato",
+      "raza": "Persa",
+      "imagen": "/images/5.jpeg",
+      "fechaNacimiento": "2017-03-10",
+      "cliente_id": 5,
+      "usuario_id": 1
+    },
+    {
+      "nombre": "Shadow",
+      "tipo": "Gato",
+      "raza": "Siames",
+      "imagen": "/images/6.jpg",
+      "fechaNacimiento": "2018-07-14",
+      "cliente_id": 6,
+      "usuario_id": 2
+    },
+    {
+      "nombre": "Whiskers",
+      "tipo": "Gato",
+      "raza": "Maine Coon",
+      "imagen": "/images/7.jpeg",
+      "fechaNacimiento": "2016-09-05",
+      "cliente_id": 7,
+      "usuario_id": 3
+    },
+    {
+      "nombre": "Nibbles",
+      "tipo": "Conejo",
+      "raza": "Enano Holandés",
+      "imagen": "/images/8.jpg",
+      "fechaNacimiento": "2020-01-22",
+      "cliente_id": 8,
+      "usuario_id": 4
+    },
+    {
+      "nombre": "Sparky",
+      "tipo": "Hámster",
+      "raza": "Syrian",
+      "imagen": "/images/9.jpg",
+      "fechaNacimiento": "2021-04-08",
+      "cliente_id": 9,
+      "usuario_id": 1
+    },
+    {
+      "nombre": "Fluffy",
+      "tipo": "Conejo",
+      "raza": "Mini Rex",
+      "imagen": "/images/10.jpg",
+      "fechaNacimiento": "2021-11-17",
+      "cliente_id": 10,
+      "usuario_id": 2
+    },
+    {
+      "nombre": "Ziggy",
+      "tipo": "Perico",
+      "raza": "Verde",
+      "imagen": "/images/11.jpg",
+      "fechaNacimiento": "2022-03-30",
+      "cliente_id": 1,
+      "usuario_id": 3
+    },
+    {
+      "nombre": "Milo",
+      "tipo": "Tortuga",
+      "raza": "Tortuga de caja",
+      "imagen": "/images/12.jpg",
+      "fechaNacimiento": "2019-10-04",
+      "cliente_id": 2,
+      "usuario_id": 4
+    },
+    {
+      "nombre": "Coco",
+      "tipo": "Cobaya",
+      "raza": "Peruviana",
+      "imagen": "/images/13.webp",
+      "fechaNacimiento": "2020-06-15",
+      "cliente_id": 3,
+      "usuario_id": 1
+    },
+    {
+      "nombre": "Biscuit",
+      "tipo": "Erizo",
+      "raza": "Erizo africano",
+      "imagen": "/images/14.jpg",
+      "fechaNacimiento": "2019-02-13",
+      "cliente_id": 4,
+      "usuario_id": 2
+    },
+    {
+      "nombre": "Peanut",
+      "tipo": "Gerbil",
+      "raza": "Mongol",
+      "imagen": "/images/15.JPG",
+      "fechaNacimiento": "2020-07-19",
+      "cliente_id": 5,
+      "usuario_id": 3
+    }
+  ]

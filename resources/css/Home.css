@@ -1,0 +1,64 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .collageBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    z-index: -1;
+  }
+
+  .collageBackground img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .welcomeContainer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 3rem;
+    background: none;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 5rem auto;
+    margin-top: 200px;
+  }
+
+  .welcomeTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 18px;
+    color: black;
+  }
+
+  .btn_primary {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn_primary:hover {
+    background-color: #666666;
+    transform: scale(1.05);
+  }

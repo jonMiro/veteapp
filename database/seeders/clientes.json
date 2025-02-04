@@ -1,0 +1,72 @@
+[
+    {
+      "nombre": "Carlos",
+      "apellidos": "Sánchez",
+      "correo": "carlos.sanchez@example.com",
+      "direccion": "Calle 123",
+      "telefono": "123456789"
+    },
+    {
+      "nombre": "Laura",
+      "apellidos": "Martínez",
+      "correo": "laura.martinez@example.com",
+      "direccion": "Avenida del Sol 45",
+      "telefono": "987654321"
+    },
+    {
+      "nombre": "Marta",
+      "apellidos": "González",
+      "correo": "marta.gonzalez@example.com",
+      "direccion": "Calle Luna 78",
+      "telefono": "564738291"
+    },
+    {
+      "nombre": "Juan",
+      "apellidos": "Pérez",
+      "correo": "juan.perez@example.com",
+      "direccion": "Paseo de los Álamos 12",
+      "telefono": "192837465"
+    },
+    {
+      "nombre": "Sofía",
+      "apellidos": "López",
+      "correo": "sofia.lopez@example.com",
+      "direccion": "Calle de la Estrella 34",
+      "telefono": "112233445"
+    },
+    {
+      "nombre": "José",
+      "apellidos": "Ramírez",
+      "correo": "jose.ramirez@example.com",
+      "direccion": "Avenida del Parque 56",
+      "telefono": "223344556"
+    },
+    {
+      "nombre": "Ana",
+      "apellidos": "Torres",
+      "correo": "ana.torres@example.com",
+      "direccion": "Calle del Bosque 67",
+      "telefono": "334455667"
+    },
+    {
+      "nombre": "David",
+      "apellidos": "Hernández",
+      "correo": "david.hernandez@example.com",
+      "direccion": "Plaza Mayor 89",
+      "telefono": "445566778"
+    },
+    {
+      "nombre": "Clara",
+      "apellidos": "Fernández",
+      "correo": "clara.fernandez@example.com",
+      "direccion": "Calle del Río 23",
+      "telefono": "556677889"
+    },
+    {
+      "nombre": "Luis",
+      "apellidos": "Jiménez",
+      "correo": "luis.jimenez@example.com",
+      "direccion": "Avenida Central 90",
+      "telefono": "667788990"
+    }
+  ]
