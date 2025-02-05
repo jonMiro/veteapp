@@ -1,20 +1,21 @@
 <script setup>
 import Header from '../../Components/Header.vue';
 import Footer from '../../Components/Footer.vue';
-import { Link } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/inertia-vue3';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
 defineProps({
-    usuarios: Array,
+  usuarios: Array,
 });
 </script>
 
 <template>
   <Header />
   <div class="container mt-5">
-    <div>
-        <Link href="/usuarios/create">Crear Usuario</Link>
+    <!-- Botón para crear un nuevo usuario -->
+    <div class="text-center mb-4">
+      <Link :href="route('usuarios.create')" class="btn btn-success">Crear Nuevo Usuario</Link>
     </div>
 
     <h2 class="text-center mb-4">Listado de Usuarios</h2>

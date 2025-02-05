@@ -4,6 +4,7 @@ import Header from '../../Components/Header.vue';
 import Footer from '../../Components/Footer.vue';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
+import { Inertia } from '@inertiajs/inertia';
 
 defineProps({
     animal: Object,
@@ -32,10 +33,13 @@ defineProps({
         </div>
 
         <!-- Botones de editar, eliminar y volver dentro de la tarjeta -->
-        <div class="d-flex justify-content-center gap-3">
-       <Link class="btn btn-warning">Editar</Link>
-          <Link class="btn btn-danger">Eliminar</Link>
-          <Link href="/animales" class="btn btn-secondary">Volver</Link>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <Link :href="route('animales.edit', animal.id)" class="btn btn-warning">Editar</Link>
+            <!-- Enlace de eliminar con método DELETE -->
+                <Link :href="`/animales/${animal.id}`" class="btn btn-danger" method="DELETE" > Eliminar </Link>
+
+
+            <Link href="/animales" class="btn btn-secondary">Volver</Link>
         </div>
       </div>
     </div>
@@ -49,12 +53,10 @@ defineProps({
   transition: none;
 }
 
-/* Estilo para los botones de editar, eliminar y volver */
 .d-flex {
   gap: 10px;
 }
 
-/* Botones de editar, eliminar y volver */
 .btn-warning, .btn-danger, .btn-secondary {
   font-weight: 600;
   padding: 8px 16px;

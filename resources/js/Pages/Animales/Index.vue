@@ -17,9 +17,10 @@ defineProps({
     <div class="container mt-5">
       <h2 class="text-center mb-4">Listado de Animales</h2>
 
-    <!--  <div class="text-center mb-4">
+      <!-- Botón para crear un nuevo animal -->
+      <div class="text-center mb-4">
         <Link :href="route('animales.create')" class="btn btn-success">Crear Nuevo Animal</Link>
-      </div>-->
+      </div>
 
       <!-- v-if para cuando hay animales -->
       <div v-if="animales.length > 0" class="row g-4">
@@ -36,7 +37,7 @@ defineProps({
               <img v-if="animal.imagen" :src="animal.imagen" alt="Imagen del animal" class="img-fluid" />
             </div>
             <div class="card-footer bg-white text-center">
-              <Link :href="`/animales/${animal.id}`" class="btn btn-primary">Ver detalles</Link>
+                <Link :href="route('animales.show', animal.id)" class="btn btn-primary">Mostrar</Link>
             </div>
           </div>
         </div>
@@ -50,15 +51,11 @@ defineProps({
   </div>
 </template>
 
-
-
 <style scoped>
 /* Ajuste de altura para que todas las tarjetas sean iguales */
 .card {
   transition:none;
 }
-
-
 
 .card img {
   height: 200px;  /* Establece una altura fija para la imagen */

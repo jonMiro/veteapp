@@ -1,0 +1,56 @@
+[
+    {
+        "tipo": "Peluquería",
+        "motivo": "Corte de pelo y baño completo",
+        "animal_id": 1,
+        "cliente_id": 1,
+        "usuario_id": 1,
+        "precio": 30.00,
+        "duracion": 60
+    },
+    {
+        "tipo": "Revisión",
+        "motivo": "Revisión general de salud",
+        "animal_id": 2,
+        "cliente_id": 2,
+        "usuario_id": 2,
+        "precio": 50.00,
+        "duracion": 30
+    },
+    {
+        "tipo": "Urgencia",
+        "motivo": "Atención por heridas",
+        "animal_id": 3,
+        "cliente_id": 3,
+        "usuario_id": 3,
+        "precio": 100.00,
+        "duracion": 90
+    },
+    {
+        "tipo": "Cita",
+        "motivo": "Consulta médica preventiva",
+        "animal_id": 4,
+        "cliente_id": 4,
+        "usuario_id": 4,
+        "precio": 40.00,
+        "duracion": 45
+    },
+    {
+        "tipo": "Revisión",
+        "motivo": "Chequeo de rutina",
+        "animal_id": 5,
+        "cliente_id": 5,
+        "usuario_id": 1,
+        "precio": 35.00,
+        "duracion": 30
+    },
+    {
+        "tipo": "Urgencia",
+        "motivo": "Atención por infecciones respiratorias",
+        "animal_id": 6,
+        "cliente_id": 6,
+        "usuario_id": 2,
+        "precio": 80.00,
+        "duracion": 75
+    }
+]

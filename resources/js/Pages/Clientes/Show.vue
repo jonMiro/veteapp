@@ -1,16 +1,13 @@
 <script setup>
 import Header from '../../Components/Header.vue';
 import Footer from '../../Components/Footer.vue';
-import { computed } from 'vue';
-import { Link, Inertia } from '@inertiajs/inertia-vue3';  // Importamos Inertia
+import { Link } from '@inertiajs/inertia-vue3';  // Importamos Inertia
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
 const props = defineProps({
   cliente: Object,
 });
-
-
 </script>
 
 <template>
@@ -28,14 +25,16 @@ const props = defineProps({
         <p class="mb-3"><strong>Correo:</strong> {{ cliente.correo }}</p>
         <p class="mb-3"><strong>Dirección:</strong> {{ cliente.Direccion }}</p>
       </div>
+
       <div class="d-flex justify-content-center gap-3 mb-5">
-
-
+        <Link :href="route('clientes.edit', cliente.id)" class="btn btn-warning">Editar</Link>
+         <!-- Botón de eliminar con método DELETE -->
+         <Link :href="`/clientes/${cliente.id}`" class="btn btn-danger" method="DELETE">Eliminar</Link>
         <Link href="/clientes" class="btn btn-secondary">Volver</Link>
       </div>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <style scoped>
@@ -62,6 +61,12 @@ const props = defineProps({
 
 .btn-danger {
   background-color: #dc3545;
+  cursor: not-allowed;
+}
+
+.btn-danger:disabled {
+  background-color: #c82333;
+  opacity: 0.65;
 }
 
 .btn-danger:hover {

@@ -1,9 +1,9 @@
 <script setup>
 import Header from '../../Components/Header.vue';
 import Footer from '../../Components/Footer.vue';
+import { Link } from '@inertiajs/inertia-vue3';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
-import { Link } from '@inertiajs/inertia-vue3';
 
 defineProps({
   usuario: Object,
@@ -25,14 +25,11 @@ defineProps({
         <p class="mb-2"><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
         <p class="mb-3"><strong>Correo:</strong> {{ usuario.correo }}</p>
 
-        <!-- Botones de editar y eliminar dentro de la tarjeta -->
         <div class="d-flex justify-content-center gap-3">
-          <Link class="btn btn-warning" :href="route('usuarios.edit', usuario.id)">Editar</Link>
-
-          <!-- Eliminar usuario con Inertia.delete -->
-          <button class="btn btn-danger">Eliminar</button>
-
-          <Link href="/usuarios" class="btn btn-secondary">Volver</Link>
+            <Link :href="route('usuarios.edit', usuario.id)" class="btn btn-warning">Editar</Link>
+         <!-- Botón de eliminar con método DELETE -->
+         <Link :href="`/usuarios/${usuario.id}`" class="btn btn-danger" method="DELETE">Eliminar</Link>
+         <Link href="/usuarios" class="btn btn-secondary">Volver</Link>
         </div>
       </div>
     </div>
@@ -70,6 +67,12 @@ defineProps({
 
 .btn-danger {
   background-color: #dc3545;
+  cursor: not-allowed;
+}
+
+.btn-danger:disabled {
+  background-color: #c82333;
+  opacity: 0.65;
 }
 
 .btn-danger:hover {

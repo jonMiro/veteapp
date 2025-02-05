@@ -22,6 +22,7 @@
             <li class="nav-item"><Link href="/usuarios" class="nav-link">Usuarios</Link></li>
             <li class="nav-item"><Link href="/clientes" class="nav-link">Clientes</Link></li>
             <li class="nav-item"><Link href="/animales" class="nav-link">Animales</Link></li>
+            <li class="nav-item"><Link href="/servicios" class="nav-link">Servicios</Link></li>
           </ul>
         </div>
       </nav>

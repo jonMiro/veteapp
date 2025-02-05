@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\AnimalController;
+use App\Http\Controllers\ServicioController;
 
 /*Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -36,20 +37,22 @@ Route::get('/main', function () {
 });
 
 
-Route::get('/usuarios', [UsuarioController::class, 'index'])->name('usuarios.index');
-Route::get('/usuarios/{id}', [UsuarioController::class, 'show'])->name('usuarios.show');
-Route::get('/usuarios/create', [UsuarioController::class, 'create'])->name('usuarios.create');
-Route::post('/usuarios', [UsuarioController::class, 'store'])->name('usuarios.store');
-Route::get('/usuarios/{id}/edit', [UsuarioController::class, 'edit'])->name('usuarios.edit');
-Route::put('/usuarios/{id}', [UsuarioController::class, 'update'])->name('usuarios.update');
+Route::resource('usuarios', UsuarioController::class);
+Route::get('usuarios/{id}', [UsuarioController::class, 'show'])->name('usuarios.show');
+
+
+Route::resource('clientes', ClienteController::class);
+Route::get('clientes/{id}', [ClienteController::class, 'show'])->name('clientes.show');
+Route::delete('/clientes/{id}', [ClienteController::class, 'destroy'])->name('clientes.destroy');
+
+//Route::get('/animales', [AnimalController::class, 'index'])->name('animales.index');
+//Route::get('/animales/{id}', [AnimalController::class, 'show'])->name('animales.show');
+
+Route::resource('animales', AnimalController::class);
+Route::get('animales/{id}', [AnimalController::class, 'show'])->name('animales.show');
+Route::delete('/animales/{id}', [AnimalController::class, 'destroy'])->name('animales.destroy');
 
 
 
-
-Route::get('/clientes', [ClienteController::class, 'index'])->name('clientes.index');
-Route::get('/clientes/{id}', [ClienteController::class, 'show'])->name('clientes.show');
-
-
-Route::get('/animales', [AnimalController::class, 'index'])->name('animales.index');
-Route::get('/animales/{id}', [AnimalController::class, 'show'])->name('animales.show');
-
+Route::resource('servicios', ServicioController::class);
+Route::get('servicios/{id}', [AnimalController::class, 'show'])->name('servicios.show');
